@@ -1,0 +1,28 @@
+#configuration file for Bochs
+
+#how much memory 
+megs:	32
+
+# filename of ROM images
+romimage: file=/Users/chen/Applications/Bochs-2.0.pre4/share/bochs/BIOS-bochs-latest
+#vgaromimage: file=../vgabios.bin
+vgaromimage: file=../bochs/VGABIOS-lgpl-latest
+
+#what disk image will be used 
+#floppya:	1_44=a.img, status=inserted
+floppya:	1_44=fd.img, status=inserted
+ata0-master: type=disk, path=hd.img, mode=flat, cylinders=250, heads=4, spt=17, translation=none
+
+#choose the boot disk
+boot:		disk
+
+#where do we send log message
+log:		bochsout.txt
+
+#disable the mouse
+mouse:	enabled=0
+
+#enable key mapping, using US layout as default
+keyboard: keymap=/Users/chen/Applications/Bochs-2.0.pre4/share/bochs/keymaps/x11-pc-us.map
+
+display_library: x

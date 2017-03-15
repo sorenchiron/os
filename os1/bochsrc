@@ -1,0 +1,33 @@
+###############################################################
+# Configuration file for Bochs
+###############################################################
+
+# how much memory the emulated machine will have
+megs: 32
+
+# filename of ROM images
+romimage: file=/Users/chen/Applications/Bochs-2.0.pre4/share/bochs/BIOS-bochs-latest
+#vgaromimage: file=../vgabios.bin
+vgaromimage: file=../bochs/VGABIOS-lgpl-latest
+
+# IMAGES IMAGES -------------------------------------------------
+#ata0-master: type=disk, path=hd10.img, mode=flat, cylinders=250, heads=4, spt=17, translation=none
+floppya: 1_44=test.img, status=inserted
+# choose the boot disk.
+boot: floppy
+
+# where do we send log messages?
+# log: bochsout.txt
+
+# cpu conf
+# cpuid: level=5, mmx=1, apic=xapic
+cpu: model=bx_generic, count=1, ips=11000000
+# cpuid: level=6, mmx=1, sep=1, sse=sse4_2, apic=xapic, aes=1, movbe=1, xsave=1
+cpuid: level=6, mmx=1, apic=xapic, sep=1, aes=1, movbe=1, simd=ssse3, misaligned_sse=1, xsave=1
+# disable the mouse
+mouse: enabled=0
+
+# enable key mapping, using US layout as default.
+keyboard: keymap=/Users/chen/Applications/Bochs-2.0.pre4/share/bochs/keymaps/x11-pc-us.map
+
+display_library: x

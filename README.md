@@ -5,6 +5,6 @@ The original purpose of starting this project is to use it as final homework of 
 
 We finished it and think it's fun.
 
-Docs of this project will be added later.
+Docs of this project can be found [here](http://blog.csdn.net/u010469993/article/details/64126587).
 
-[Contact me](sychen@zju.edu.cn) if you are interested
+Contact me :sychen@zju.edu.cn if you are interested.

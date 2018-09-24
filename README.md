@@ -1,7 +1,7 @@
 # os
-This is a simple operating system demo for i386cpu created from scratch.
+This is a simple operating system for i386cpu created from scratch.
 
-The original purpose of starting this project is to use it as final homework of ZJU-advanced-OS lessons.
+The original purpose of starting this project is to use it as final homework of ZJU-advanced-OS lessons, and we were persuing some challenges.
 
 We finished it and think it's fun.
 
